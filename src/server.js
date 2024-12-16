@@ -1,13 +1,16 @@
 import express from "express";
 
+import { uploadRoute } from "./routes/upload.routes.js";
+
 const app = express();
 
 const PORT = 3000;
 
 app.use(express.json());
+app.use(uploadRoute);
 
 app.get("/", (request, response) => {
-  response.send({ message: "Hello!" });
+  return response.json({ message: "Hello!" });
 });
 
 app.listen(PORT, () => {
