@@ -7,11 +7,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
-app.use(uploadRoute);
-
-app.get("/", (request, response) => {
-  return response.json({ message: "Hello!" });
-});
+app.use("/uploads", uploadRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
