@@ -51,10 +51,9 @@ $ npm start
 
 ### **Routes**
 
-| route     | HTTP method | params | description |
-| :-------- | :---------: | :----: | :---------: |
-| `/`       |     GET     |   -    |  Home page  |
-| `/upload` |    POST     |   -    | Upload file |
+| route      | HTTP method | params | description |
+| :--------- | :---------: | :----: | :---------: |
+| `/uploads` |    POST     |   -    | Upload file |
 
 <br/>
 
